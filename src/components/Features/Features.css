@@ -1,0 +1,54 @@
+.mainFeaturesContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+}
+.mainFeaturesContainer .featuresRow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+}
+.mainFeaturesContainer .featuresRow:first-child{
+    padding-top: 35px;
+}
+@media (max-width:1919px) {
+    .mainFeaturesContainer{
+        gap: 68px;
+    }
+    .mainFeaturesContainer > .featuresRow:first-child{
+        padding-top: 28px;
+    }
+}
+@media (max-width:1439px) {
+    .mainFeaturesContainer{
+        gap:50px;
+    }
+    .mainFeaturesContainer > .featuresRow .ourBenefitsCard .ourBenefitsIcon {
+        max-height: 48px;
+    }
+}
+@media (max-width:992px){
+    .mainFeaturesContainer{
+        gap: 68px;
+    }
+    .mainFeaturesContainer > .featuresRow .ourBenefitsCard .ourBenefitsIcon {
+        max-height:unset;
+    }
+    .mainFeaturesContainer > .featuresRow{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 68px;
+    }
+    .mainFeaturesContainer > .featuresRow .ourBenefitsCard{
+        padding: 48px 38px 28px 28px;    
+    }
+}
+@media (max-width:768px) {
+    .mainFeaturesContainer > .featuresRow .ourBenefitsCard .ourBenefitsIcon {
+        max-height:56px;
+    }
+}

@@ -1,0 +1,32 @@
+.ourStudentsMainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.ourStudentsMainContainer .ourStudentsRow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+@media (max-width:1919px){
+    .ourStudentsMainContainer{
+        gap: 40px;
+    }
+    .ourStudentsMainContainer .ourStudentsRow{
+        gap: 40px;
+    }
+}
+@media (max-width:992px){
+    .ourStudentsMainContainer{
+        gap: 40px;
+    }
+    .ourStudentsMainContainer .ourStudentsRow{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .ourStudentsMainContainer .ourStudentsRow:nth-child(2) .studentCard:nth-child(2),
+    .ourStudentsMainContainer .ourStudentsRow:nth-child(2) .studentCard:nth-child(3){
+        display: none;
+    }
+}

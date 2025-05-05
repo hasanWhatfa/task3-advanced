@@ -1,0 +1,105 @@
+.ourHistoryMainContaier{
+    position: relative;
+    padding: 148px 138px;
+    background-color: var(--white);
+    border-radius: 12px;
+    border: 2px solid var(--grey15);
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 0;
+    overflow: hidden;
+}
+.ourHistoryMainContaier .cardsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 100px;
+}
+.thatAnnoyingShape{
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    justify-content: space-between;
+    background-color: var(--orange75);
+    position: relative;
+    width: 26px;
+    margin-right: -16px;
+    transition: 300ms;
+    .orangeVline{
+        width: 2px;
+        height: 100%;
+        background-color: var(--grey15);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.ourHistoryMainContaier .historyCard:first-child .circle:first-child{
+    box-shadow: -1px -13px 0px 0px white;
+}
+.ourHistoryMainContaier .historyCard:last-child .circle:first-child{
+    box-shadow: -1px 12px 0px 1px white;
+}
+.ourHistoryMainContaier .historyCard:first-child .circle:first-child::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 74px;
+    bottom: 112%;
+    background: white;
+    left: -12px;
+}
+.ourHistoryMainContaier .historyCard:last-child .circle:first-child::after{
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 300px;
+    top: 112%;
+    background: white;
+    right:0px;
+}
+@media (max-width:1919px){
+    .ourHistoryMainContaier{
+        padding:98px;
+    }
+    .ourHistoryMainContaier .cardsContainer{
+        gap: 80px;
+    }
+    .thatAnnoyingShape{
+        width: 32px;
+        .orangeVline{
+            width: 3px;
+        }
+    }
+}
+@media (max-width:992px) {
+    .ourHistoryMainContaier{
+        padding:48px 18px 48px 8px;
+    }
+    .ourHistoryMainContaier .cardsContainer{
+        gap: 50px;
+    }
+    .thatAnnoyingShape{
+        width: 32px;
+        margin-right: -15px;
+        .orangeVline{
+            width: 2px;
+        }
+    }
+    .ourHistoryMainContaier .historyCard:first-child .circle:first-child::before {
+        left: -4px;
+    }
+    .ourHistoryMainContaier .historyCard:last-child .circle:first-child::after{
+        width: 18px;
+    }
+}
+@media (max-width:768px){
+    .thatAnnoyingShape{
+        width: 57px;
+        .orangeVline{
+            width: 2px;
+        }
+    }
+}

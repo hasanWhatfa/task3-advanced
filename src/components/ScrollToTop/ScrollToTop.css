@@ -1,0 +1,34 @@
+.scrollToTopBtn{
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    padding: 14px;
+    background-color: var(--orange95);
+    border-radius: 9px;
+    border: 2px solid var(--grey15);
+    box-shadow: 2px 2px 0px 2px var(--shadow-dark);
+    transition: 300ms ease;
+    cursor: pointer;
+    display: none;
+    z-index: 30;
+    svg{
+        width: 30px;
+        height: 30px;
+    }
+}
+.scrollToTopBtn:hover{
+    transform: translateY(-10px);
+    background-color: var(--orange65);
+}
+.showScrollBtn{
+    display: block;
+}
+
+@media (max-width:1919px){
+    .scrollToTopBtn{
+        svg{
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

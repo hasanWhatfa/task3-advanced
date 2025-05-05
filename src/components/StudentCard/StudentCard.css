@@ -1,0 +1,146 @@
+.studentCard{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+    padding: 48px;
+    border: 2px solid var(--grey15);
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 6px 6px 0px 2px var(--shadow-dark);
+    width: 31.2449874%;
+    position: relative;
+}
+.studentCard .imgContainer{
+    width: 100%;
+    max-height: 304px;
+    z-index: 2;
+    transition: 300ms ease;
+    img{
+        width: 100%;
+    }
+}
+.studentCard .studentCardText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    z-index: 2;
+}
+.studentCard .studentCardText h4{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 130%;
+    font-family: var(--headings-font);
+    color: var(--text-dark);
+}
+.studentCard .studentCardText p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--text-lighter-g30);
+}
+.studentCardBgShape{
+    position: absolute;
+    width: 25.34%;
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 67.798%;
+    background-color: var(--orange95);
+    z-index: 0;
+    border: 2px solid var(--grey15);
+    border-radius: 0px 0px 12px 12px;
+    transition: 300ms ease;
+}
+.studentCard:hover .studentCardBgShape{
+    background-color: var(--orange65);
+    width:40%;
+}
+.studentCard:hover .imgContainer{
+    scale: 1.01;
+}
+@media (max-width:1919px){
+    .studentCard{
+        gap: 40px;
+        padding:38px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 0px 2px var(--shadow-dark);
+        width:31.25%;
+    }
+    .studentCard .imgContainer{
+        img{
+            width: 100%;
+            max-height: 220px;
+        }
+    }
+    .studentCard .studentCardText{
+        gap: 14px;
+    }
+    .studentCard .studentCardText h4{
+        font-size: 24px;
+    }
+    .studentCard .studentCardText p{
+        font-size: 16px;
+    }
+    .studentCardBgShape{
+        width: 26.013%;
+        height: 65.1%;
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+@media (max-width:1200px){
+    .studentCard{
+        gap:30px;
+        padding:28px;
+        width:31.25%;
+    }
+    .studentCard .imgContainer{
+        img{
+            width: 100%;
+            max-height: 200px;
+        }
+    }
+    .studentCard .studentCardText{
+        gap: 10px;
+    }
+    .studentCardBgShape{
+        width: 26.013%;
+        height: 63.1%;
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+
+@media (max-width:992px){
+    .studentCard{
+        gap: 30px;
+        padding: 28px;
+        border-radius:10px;
+        box-shadow:4px 4px 0px 2px var(--shadow-dark);
+        width:100%;
+        max-width: 500px;
+    }
+    .studentCard .imgContainer{
+        width: 100%;
+        max-height: 304px;
+        z-index: 2;
+        img{
+            width: 100%;
+            max-height: 191px;
+        }
+    }
+    .studentCard .studentCardText{
+        gap: 10px;
+    }
+    .studentCard .studentCardText h4{
+        font-size: 22px;
+    }
+    .studentCard .studentCardText p{
+        font-size: 16px;
+    }
+    .studentCardBgShape{
+        width: 26.272%;         
+        height:64.402173%;
+    }
+}

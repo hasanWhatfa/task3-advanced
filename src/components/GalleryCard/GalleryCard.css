@@ -1,0 +1,166 @@
+.galleryCard{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 48px;
+    border: 2px solid var(--grey15);
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 6px 6px 0px 2px var(--shadow-dark);
+    align-items: center;
+    width: 100%;
+}
+.galleryCard .galleryImgContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: -200px;
+    img{
+        width: 23.1%;
+    }
+}
+.galleryCardHeading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.galleryCardHeading h3{
+    flex: 1;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    font-family: var(--headings-font);
+    color: var(--text-dark);
+}
+.galleryCardHeading .btnsContainer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    button{
+        cursor: pointer;
+        border-radius: 8px;
+        border: 2px solid var(--text-light-g20);
+        padding: 12px;
+        background-color: var(--white);
+        max-height: 58px;
+        transition: 300ms;
+        img{
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+.galleryCardHeading .btnsContainer button:hover{
+    background-color: var(--orange65);
+}
+.galleryCardText{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 150%;
+    color: var(--text-lighter-g30);
+    width: 100%;
+}
+
+@media (max-width:1919px){
+    .galleryCard{
+        gap: 30px;
+        padding: 38px;
+        box-shadow: 4px 4px 0px 2px var(--shadow-dark);
+    }
+    .galleryCard .galleryImgContainer{
+        margin-top: -135px;
+        img{
+            width:22.5%;
+        }
+    }
+    .galleryCardHeading h3{
+        font-size: 34px;
+        padding-top: 8px;
+    }
+    .galleryCardHeading .btnsContainer{
+        gap: 16px;
+        button{
+            border-radius: 6px;
+            padding: 10px;
+            max-height: 48px;
+            img{
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    .galleryCardText{
+        font-size: 20px;
+    }
+}
+@media (max-width:1200px){
+    .galleryCard{
+        gap: 20px;
+        padding: 28px;
+        box-shadow: 4px 4px 0px 2px var(--shadow-dark);
+    }
+    .galleryCard .galleryImgContainer{
+        margin-top: -115px;
+        gap: 30px;
+        img{
+            width:22%;
+        }
+    }
+    .galleryCardHeading h3{
+        font-size: 28px;
+        padding-top: 0px;
+    }
+    .galleryCardText{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:768px){
+    .galleryCard{
+        gap: 20px;
+        padding: 28px;
+        width: 100%;
+    }
+    .galleryCard .galleryImgContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        margin-top: -200px;
+        img{
+            width: 100%;
+            transform: scale(1, 0.7709);
+        }
+    }
+    .galleryCard .galleryImgContainer img:not(:first-child){
+        display: none;
+    }
+    .galleryCardHeading{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .galleryCardHeading h3{
+        font-size: 28px;
+        text-align: center;
+    }
+    .galleryCardText{
+        font-size: 18px;
+        text-align: center;
+    }
+    
+}
+@media (max-width:389px){
+    .galleryCard .galleryImgContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        margin-top: -125px;
+        img{
+            width: 100%;
+            transform: scale(1, 0.7709);
+        }
+    }
+}

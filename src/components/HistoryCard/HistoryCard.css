@@ -1,0 +1,175 @@
+.historyCard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.historyCard .histroycardLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.historyCard .histroycardLeft .leftShpe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -10px;
+    z-index: 2;
+}
+.histroycardLeft .leftShpe .circle{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: var(--white);
+    border-radius: 50%;
+    border: 2px solid var(--grey15);
+    transition: 300ms ease;
+}
+.histroycardLeft .leftShpe .circle:first-child{
+    margin-right: -2px;
+}
+.histroycardLeft .leftShpe .circle:last-child{
+    margin-left: -2px;
+}
+.histroycardLeft .leftShpe .orangeline{
+    width: 55px;
+    height: 12px;
+    background-color: var(--orange75);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: 300ms ease;
+    border: 2px solid transparent;
+    span{
+        width: 78%;
+        height: 3px;
+        background-color: var(--grey15);
+    }
+}
+.historyCard:hover .orangeline{
+    background-color: var(--orange65);
+    border: 2px solid var(--grey15);
+}
+.rightCardLeftSide{
+    padding: 28px 48px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background-color: var(--white);
+    border-radius: 12px;
+    border: 2px solid var(--grey15);
+    box-shadow: 6px 6px 0px 2px var(--shadow-dark);
+    position: relative;
+    gap: 20px;
+    transition: 300ms ease;
+}
+.historyCard:hover .rightCardLeftSide{
+    box-shadow: 12px 12px 0px 2px var(--orange75);
+    transform: translate(-6px,-6px);
+}
+.historyCard .histroycardLeft img{
+    width:87px;
+    height: 87px;
+}
+.historyCard .histroycardLeft h3{
+    font-weight: 700;
+    font-size: 68px;
+    font-family: var(--headings-font);
+    line-height:130%;
+}
+.HorizShape{
+    position: absolute;
+    right: 97%;
+    top: 50%;
+    transform:translateY(-50%);
+    width: 95px;
+    height: 20px;
+}
+.histroyCardRight{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.histroyCardRight h4{
+    font-family: var(--headings-font);
+    font-weight: 700;
+    line-height: 130%;
+    font-size: 28px;
+}
+.histroyCardRight p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--text-light-g20);
+}
+@media (max-width:1919px){
+    .historyCard{
+        gap: 40px;
+    }
+    .histroycardLeft .leftShpe .orangeline{
+        height: 10px;
+    }
+    .rightCardLeftSide{
+        padding: 22px 32px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 0px 2px var(--shadow-dark);
+    }
+    .historyCard:hover .rightCardLeftSide{
+        box-shadow: 8px 8px 0px 2px var(--orange75);
+        transform: translate(-4px,-4px);
+    }
+    .historyCard .histroycardLeft img{
+        width:60px;
+        height: 60px;
+    }
+    .historyCard .histroycardLeft h3{
+        font-size: 48px;
+    }    
+    .histroyCardRight{
+        gap: 16px;
+    }
+    .histroyCardRight h4{
+        font-size: 24px;
+    }
+    .histroyCardRight p{
+        font-size: 16px;
+    }
+}
+
+
+
+@media (max-width:992px){
+    .historyCard{
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .rightCardLeftSide{
+        padding: 18.5px 22px;
+        border-radius: 10px;
+    }
+    .histroycardLeft .leftShpe .orangeline{
+        width: 22px;
+        height: 12px;
+    }
+    .historyCard .histroycardLeft img{
+        width:50px;
+        height:50px;
+    }
+    .historyCard .histroycardLeft h3{
+        font-size: 38px;
+    }
+    .histroyCardRight{
+        gap: 12px;
+        padding-left: 44px;
+    }
+    .histroyCardRight h4{
+        font-size: 22px;
+    }
+    .histroyCardRight p{
+        font-size: 16px;
+    }
+}

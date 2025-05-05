@@ -1,0 +1,163 @@
+.awardsContentContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.awardsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.awardsContainer > div.ourBenefitsCard{
+    min-height: 402px;
+    width: 31.66228%;
+    /* not pixel-perfect but this makes the design much better */
+    padding: 78px 45px 48px;
+}
+.bottomAwardsSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row-reverse;
+}
+.awardsBtns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.awardsBtns button{
+    border: 2px solid var(--text-light-g20);
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 12px;
+    max-height: 58px;
+    transition: 300ms;
+    cursor: pointer;
+}
+.awardsBtns button:hover{
+    background-color: var(--orange65);
+}
+.bottomAwardsSection > p{
+    color: var(--text-dark);
+    font-family: var(--headings-font);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 130%;
+}
+.bottomAwardsSection > p:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:1919px){
+    .awardsContentContainer{
+        gap: 40px;
+    }
+    .awardsContainer{
+        gap: 30px;
+    }
+    .awardsContainer > div.ourBenefitsCard{
+        /* come back here */
+        min-height: 322px;
+        width:31.77109375%;
+        padding: 58px 38px 38px;
+    }
+    .awardsBtns{
+        gap: 16px;
+    }
+    .awardsBtns button{
+        border-radius: 6px;
+        padding: 10px;
+        max-height: 48px;
+        img{
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .bottomAwardsSection > p{
+        font-size: 18px;
+    }
+}
+@media (max-width:1200px){
+    .awardsContentContainer{
+        gap: 30px;
+    }
+    .awardsContainer{
+        gap: 20px;
+    }
+    .awardsContainer > div.ourBenefitsCard{
+        min-height: 360px;
+        width:31.77109375%;
+        padding: 38px 23px 23px;
+    }
+    .awardsBtns{
+        gap: 16px;
+    }
+    .awardsBtns button{
+        border-radius: 6px;
+        padding: 10px;
+        max-height: 48px;
+        img{
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .bottomAwardsSection > p{
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:992px){
+    .awardsContentContainer{
+        gap: 30px;
+    }
+    .awardsContainer{
+        flex-direction: column;
+        gap:0;
+    }
+    .awardsContainer > div.ourBenefitsCard{
+        min-height: 274px;
+        width:100%;
+        padding: 48px 28px 28px;
+    }
+    .awardsContainer > div.ourBenefitsCard{
+        display: none;
+    }
+    .awardsContainer > div.ourBenefitsCard:last-child{
+        display: flex;
+    }
+    .awardsBtns{
+        gap: 16px;
+    }
+    .awardsBtns button{
+        border-radius:6px;
+        padding: 10px;
+        max-height: 48px;
+    }
+    .bottomAwardsSection > p{
+        font-size: 18px;
+    }
+}

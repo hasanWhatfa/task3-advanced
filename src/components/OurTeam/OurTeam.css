@@ -1,0 +1,37 @@
+.ourTeamCardsMainC{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    gap: 50px;
+}
+.ourTeamRow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+@media (max-width:1919px){
+    .ourTeamCardsMainC{
+        gap: 40px;
+    }
+    .ourTeamRow{
+        gap: 40px;
+    }
+}
+@media (max-width:1200px){
+    .ourTeamCardsMainC{
+        gap: 30px;
+    }
+    .ourTeamRow{
+        gap: 30px;
+    }
+}
+@media (max-width:992px){
+    .ourTeamCardsMainC{
+        gap: 40px;
+    }
+    .ourTeamRow{
+        flex-direction: column;
+        gap: 40px;
+    }
+}

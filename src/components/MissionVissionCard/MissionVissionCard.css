@@ -1,0 +1,87 @@
+.mvCard{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 60px;
+    padding: 58px;
+    width:48.1204%;
+    background-color: var(--white);
+    border: 2px solid var(--grey15);
+    border-radius: 12px;
+    box-shadow:6px 6px 0px 2px var(--shadow-dark);
+    min-height: 410px;
+    transition: 300ms ease;
+}
+.mvCard:hover{
+    box-shadow:6px 6px 0px 2px var(--orange65);
+}
+.mvCard .mvCHeader img{
+    width: 80px;
+    height: 80px;
+}
+.mvCHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.mvCHeader h3{
+    flex: 1;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 130%;
+    font-family: var(--headings-font);
+}
+.mvPara{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--text-light-g20);
+}
+@media (max-width:1919px){
+    .mvCard{
+        gap: 50px;
+        padding: 48px;
+        width:48.4375%;
+        border-radius: 10px;
+        box-shadow:4px 4px 0px 2px var(--shadow-dark);
+        min-height: 330px;
+    }
+    .mvCard:hover{
+        box-shadow:4px 4px 0px 2px var(--orange65);
+    }
+    .mvCard .mvCHeader img{
+        width: 60px;
+        height: 60px;
+    }
+    .mvCHeader h3{
+        font-size: 38px;
+    }
+    .mvPara{
+        font-size:16px;
+    }
+}
+@media (max-width:1439px){
+    .mvCard{
+        min-height: 360px;
+    }
+}
+/* small problem appeared here */
+@media (max-width:992px){
+    .mvCard{
+        gap: 40px;
+        padding: 38px;
+        width:100%;
+        min-height: 386px;
+    }
+    .mvCard .mvCHeader img{
+        width: 50px;
+        height: 50px;
+    }
+    .mvCHeader h3{
+        font-size: 30px;
+    }
+    .mvPara{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,268 @@
+.SubHero{
+    padding:158px 2.6045% 0;/*centring done but adjust top value*/
+    margin-bottom: 200px;
+}
+.subHeroContent{
+    padding: 148px 118px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+    background-color: var(--white);
+    border: 2px solid var(--grey15);
+    box-shadow: 8px 8px 0px 1px var(--shadow-dark);
+    border-radius: 12px;
+}
+.subHeroContent .leftSideSubHero , .subHeroContent .rightSideSubHero{
+    width: 48.418%;
+}
+.subHeroShapes{
+    position: absolute;
+    top: 0;
+    left: 0;
+    img{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+    }
+}
+.subHeroShapes img:first-child{
+    top: 0;
+    left: 0;
+}
+.subHeroShapes img:nth-child(2){
+    top: 0;
+    left: 50px;
+}
+.subHeroShapes img:nth-child(3){
+    top:0;
+    left: 100px;
+}
+.subHeroShapes img:nth-child(4){
+    top: 0;
+    left: 150px;
+}
+.subHeroShapes img:nth-child(5){
+    top: 50px;
+    left: 0;
+}
+.subHeroShapes img:nth-child(6){
+    top: 50px;
+    left: 50px;
+}
+.subHeroShapes img:nth-child(7){
+    top: 50px;
+    left: 100px;
+}
+.subHeroShapes img:nth-child(8){
+    top: 100px;
+    left: 0px;
+}
+.subHeroShapes img:nth-child(9){
+    top: 100px;
+    left: 50px;
+}
+.subHeroShapes img:last-child{
+    top: 150px;
+    left: 0px;
+}
+
+
+.leftSideSubHero{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 14px;
+}
+.leftSideSubHero .smallText{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    padding: 8px 18px;
+    border: 2px solid var(--grey15);
+    border-radius: 8px;
+}
+.leftSideSubHero .subHeroTitle{
+    font-size: 48px;
+    font-weight:700;
+    line-height:130%;
+    font-family: var(--headings-font);
+}
+.rightSideSubHero{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+}
+/*1,580 */
+@media (max-width:1919px){
+    .SubHero{
+        padding:136px 5.556% 0;
+        margin-bottom: 150px;
+    }
+    .subHeroContent{
+        padding: 98px 78px;
+        box-shadow: 6px 6px 0px 1px var(--shadow-dark);
+        border-radius: 10px;
+    }
+    .subHeroContent .leftSideSubHero , .subHeroContent .rightSideSubHero{
+        width: 47.7679%
+    }
+    .subHeroShapes{
+        img{
+            width: 35px;
+            height: 35px;
+            position: absolute;
+        }
+    }
+    .subHeroShapes img:first-child{
+        top: 0;
+        left: 0;
+    }
+    .subHeroShapes img:nth-child(2){
+        top: 0;
+        left: 35px;
+    }
+    .subHeroShapes img:nth-child(3){
+        top:0;
+        left: 70px;
+    }
+    .subHeroShapes img:nth-child(4){
+        top: 0;
+        left: 105px;
+    }
+    .subHeroShapes img:nth-child(5){
+        top: 35px;
+        left: 0;
+    }
+    .subHeroShapes img:nth-child(6){
+        top: 35px;
+        left: 35px;
+    }
+    .subHeroShapes img:nth-child(7){
+        top: 35px;
+        left: 70px;
+    }
+    .subHeroShapes img:nth-child(8){
+        top: 70px;
+        left: 0px;
+    }
+    .subHeroShapes img:nth-child(9){
+        top: 70px;
+        left: 35px;
+    }
+    .subHeroShapes img:last-child{
+        top: 105px;
+        left: 0px;
+    }
+    .leftSideSubHero{
+        gap: 10px;
+    }
+    .leftSideSubHero .smallText{
+        font-size: 16px;
+        padding: 6px 13px;
+        border-radius: 6px;
+    }
+    .leftSideSubHero .subHeroTitle{
+        font-size: 38px;
+    }
+    .rightSideSubHero{
+        font-size: 16px;
+    }
+}
+@media (max-width:1200px) {
+    .leftSideSubHero .smallText{
+        font-size: 14px;
+    }
+    .leftSideSubHero .subHeroTitle{
+        font-size: 30px;
+    }
+    .rightSideSubHero{
+        font-size: 14px;
+    }
+}
+@media (max-width:992px){
+    .SubHero{
+        padding:106px 3.473% 0;
+        margin-bottom: 80px;
+    }
+    .subHeroContent{
+        padding: 48px 28px;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+        box-shadow: 6px 6px 0px 1px var(--shadow-dark);
+        border-radius: 10px;
+    }
+    .subHeroContent .leftSideSubHero , .subHeroContent .rightSideSubHero{
+        width: 100%;
+    }
+    .subHeroShapes{
+        img{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+        }
+    }
+    .subHeroShapes img:first-child{
+        top: 0;
+        left: 0;
+    }
+    .subHeroShapes img:nth-child(2){
+        top: 0;
+        left: 25px;
+    }
+    .subHeroShapes img:nth-child(3){
+        top:0;
+        left: 50px;
+    }
+    .subHeroShapes img:nth-child(4){
+        top: 0;
+        left: 75px;
+    }
+    .subHeroShapes img:nth-child(5){
+        top: 25px;
+        left: 0;
+    }
+    .subHeroShapes img:nth-child(6){
+        top: 25px;
+        left: 25px;
+    }
+    .subHeroShapes img:nth-child(7){
+        top: 25px;
+        left: 50px;
+    }
+    .subHeroShapes img:nth-child(8){
+        top: 50px;
+        left: 0px;
+    }
+    .subHeroShapes img:nth-child(9){
+        top: 50px;
+        left: 25px;
+    }
+    .subHeroShapes img:last-child{
+        top: 75px;
+        left: 0px;
+    }
+    
+    
+    .leftSideSubHero{
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .leftSideSubHero .smallText{
+        font-size: 14px;
+        padding: 6px 14px;
+        border-radius: 6px;
+    }
+    .leftSideSubHero .subHeroTitle{
+        font-size: 28px;
+        text-align: center;
+    }
+    .rightSideSubHero{
+        font-size: 16px;
+        text-align: center;
+    }
+}

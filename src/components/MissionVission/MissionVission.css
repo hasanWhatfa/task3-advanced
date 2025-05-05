@@ -1,0 +1,18 @@
+.missionVissionContainer{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+@media (max-width:1919px) {
+    .missionVissionContainer{
+        gap: 40px;
+    }
+}
+@media (max-width:992px){
+    .missionVissionContainer{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
