@@ -11,7 +11,7 @@ const HandleLoadingComponent = () => {
     const handleLoad = () => {
       setTimeout(() => {
         setLoading(false);
-      }, 2000);
+      }, 1000);
     };
 
     if (document.readyState === "complete") {
