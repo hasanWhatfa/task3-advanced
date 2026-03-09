@@ -25,13 +25,15 @@ const Navbar = (props) => {
 
 //  save the active link even if the page is reloded(design problem)
 useEffect(() => {
-  const currentLink = data.find(link => link.linkPath === location.pathname);
+  const currentLink = data.find((link) => {
+    return(
+     link.linkPath === location.pathname
+    )
+  });
   if (currentLink) {
     setActiveLink(currentLink.linkName);
   }
 }, [location.pathname, data]);
-
-
   return (
     <header>
     <HeaderNav scrolling={scrolling} sentenct="Admission is Open, Grab your seat now"/>
@@ -39,7 +41,7 @@ useEffect(() => {
     the navBar come back to it's original place*/}
       <div className="navContent">
         <h1 className='logoConatiner'>
-          <img src="/assets/icons/logoAbstract.svg" alt="logo" /> {companyName}
+          <img src="./assets/icons/logoAbstract.svg" alt="logo" /> {companyName}
         </h1>
         <ul className="navLinks">
           {
@@ -63,7 +65,7 @@ useEffect(() => {
     <nav className={`smScreenNav ${scrolling ? 'navBarSroll' : ''}`}>
       <div className="mobileNavContent">
         <h1 className='logoConatiner'>
-            <img src="/assets/icons/logoAbstract.svg" alt="logo" /> Little Learners
+            <img src="./assets/icons/logoAbstract.svg" alt="logo" /> Little Learners
         </h1>
         <ul className={`navLinksSm ${showMenu ? 'showMenuNav': ''}`}>
           <li className='closeIconNavSm' onClick={()=>setShowmenu(false)}><MdClose /></li>

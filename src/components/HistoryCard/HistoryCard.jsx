@@ -13,7 +13,7 @@ const HistoryCard = ({year,title,description,cardHoverd,setCardHoverd}) => {
                 <div className="circle"></div>
             </div>
             <div className="rightCardLeftSide"  data-aos="fade-up" data-aos-duration="800">
-                <img src="/assets/images/historyShpe.png"/>
+                <img src="./assets/images/historyShpe.png"/>
                 <h3>{year}</h3>
             </div>
         </div>

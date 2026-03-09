@@ -10,7 +10,7 @@ const Fooetr = () => {
           <div className="logoAndContacts">
               <div className="logoContainerFooter">
                 <div className="logoF">
-                  <img src="/assets/icons/logoFooter.svg" alt="logo" />
+                  <img src="./assets/icons/logoFooter.svg" alt="logo" />
                   <h2>Little Learners</h2>
                 </div>
                 <p className="footerDesc">
@@ -35,9 +35,6 @@ const Fooetr = () => {
             })}
           </div>
         </div>
-
-
-
         <div className="bottomContentFooter">
             <div className="line"></div>
             <div className="privacyThings">
@@ -49,9 +46,9 @@ const Fooetr = () => {
                 <p>Cookie Policy</p>
               </div>
                 <div className="socialMediaLinks">
-                  <img src="/assets/icons/facebook.svg" />
-                  <img src="/assets/icons/twitter.svg" />
-                  <img src="/assets/icons/linkeden.svg" />
+                  <img src="./assets/icons/facebook.svg" />
+                  <img src="./assets/icons/twitter.svg" />
+                  <img src="./assets/icons/linkeden.svg" />
                 </div>
             </div>
             <div className="line"></div>

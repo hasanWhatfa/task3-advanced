@@ -9,7 +9,7 @@ const TeamMemberCard = ({img,name,qualification,talk}) => {
             <h3>{name}</h3>
         </div>
         <a className="memberIcon" href={`mailto:${name}@gmail.com`}>
-            <img src="/assets/icons/envelope.svg"/>
+            <img src="./assets/icons/envelope.svg"/>
         </a>
       </div>
       <div className="memberCardText">

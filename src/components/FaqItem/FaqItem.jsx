@@ -16,7 +16,7 @@ const FaqItem = (props) => {
             </div>
         </div>
         <button onClick={()=>setClicked(!clicked)} className={`${clicked ? 'rotated' : ''}`}>
-            <img src={`/assets/icons/${clicked ? 'minus.svg' : 'plus.svg'}`}/>
+            <img src={`./assets/icons/${clicked ? 'minus.svg' : 'plus.svg'}`}/>
         </button>
     </div>
   )

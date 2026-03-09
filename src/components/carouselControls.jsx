@@ -8,7 +8,7 @@ const  handleNext = (data,useStateSetter)=> {
         if (prevIndex === data.length - 1) {
             return 0; 
         } else {
-            return prevIndex + 1;;
+            return prevIndex + 1;
         }
     });
 }

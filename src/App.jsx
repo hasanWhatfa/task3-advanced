@@ -20,11 +20,11 @@ function App() {
     <Routes>
       <Route path='/' element={<HandleLoadingComponent />}>
         <Route index element={<Home />}/>
-        <Route path='/about' element={<About />}/>
-        <Route path='/academics' element={<Academics />} />
-        <Route path='/admissions' element={<Admissions />} />
-        <Route path='/studendLife' element={<StudentL />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path='about' element={<About />}/>
+        <Route path='academics' element={<Academics />} />
+        <Route path='admissions' element={<Admissions />} />
+        <Route path='studendLife' element={<StudentL />} />
+        <Route path='contact' element={<Contact />} />
       </Route>
     </Routes>
     <Fooetr />

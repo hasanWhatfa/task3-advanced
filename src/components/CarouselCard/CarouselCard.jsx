@@ -8,11 +8,11 @@ const CarouselCard = ({img,name,comment}) => {
             <h4>{name}</h4>
         </div>
         <div className="stars">
-            <img src="/assets/icons/star.svg" />
-            <img src="/assets/icons/star.svg" />
-            <img src="/assets/icons/star.svg" />
-            <img src="/assets/icons/star.svg" />
-            <img src="/assets/icons/star.svg" />
+            <img src="./assets/icons/star.svg" />
+            <img src="./assets/icons/star.svg" />
+            <img src="./assets/icons/star.svg" />
+            <img src="./assets/icons/star.svg" />
+            <img src="./assets/icons/star.svg" />
         </div>
         <p className="caroDesc">
             {comment}

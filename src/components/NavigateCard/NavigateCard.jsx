@@ -8,7 +8,7 @@ const NavigateCard = ({title,desc}) => {
         <div className="navigateCardTop">
             <div className="cardHeading">
                 <h3 className='cardTitle'>{title}</h3>
-                <img src="/assets/images/navigateTitleShape.png"/>
+                <img src="./assets/images/navigateTitleShape.png"/>
             </div>
             <p className="navigateCardDesc">
                 {desc}

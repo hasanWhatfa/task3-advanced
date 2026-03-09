@@ -32,10 +32,10 @@ const AwardsCompo = () => {
             <div className="bottomAwardsSection">
                 <div className="awardsBtns">
                     <button onClick={()=>handlePrev(awardsData,setDisplayIndex)}>
-                        <img src="/assets/icons/arrowLeft.svg"/>
+                        <img src="./assets/icons/arrowLeft.svg"/>
                     </button>
                     <button onClick={()=>handleNext(awardsData,setDisplayIndex)}>
-                        <img src="/assets/icons/arrowRight.svg"/>
+                        <img src="./assets/icons/arrowRight.svg"/>
                     </button>
                 </div>
                 <p>8 More Awards</p>

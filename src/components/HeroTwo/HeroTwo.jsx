@@ -5,16 +5,16 @@ const HeroTwo = ({data}) => {
     <section className='SubHero' data-aos="zoom-in-down" data-aos-duration="1000">
         <div className="subHeroContent">
             <div className="subHeroShapes">
-                <img src="/assets/images/subHeroShapes.png" alt="some shapes" />
-                <img src="/assets/images/subHeroShapes.png" alt="some shapes" />
-                <img src="/assets/images/subHeroShapes.png" alt="some shapes" />
-                <img src="/assets/images/subHeroShapes.png" alt="some shapes" />
-                <img src="/assets/images/subHeroShapes.png" alt="some shapes" />
-                <img src="/assets/images/subHeroShapes.png" alt="some shapes" />
-                <img src="/assets/images/subHeroShapes.png" alt="some shapes" />
-                <img src="/assets/images/subHeroShapes.png" alt="some shapes" />
-                <img src="/assets/images/subHeroShapes.png" alt="some shapes" />
-                <img src="/assets/images/subHeroShapes.png" alt="some shapes" />
+                <img src="./assets/images/subHeroShapes.png" alt="some shapes" />
+                <img src="./assets/images/subHeroShapes.png" alt="some shapes" />
+                <img src="./assets/images/subHeroShapes.png" alt="some shapes" />
+                <img src="./assets/images/subHeroShapes.png" alt="some shapes" />
+                <img src="./assets/images/subHeroShapes.png" alt="some shapes" />
+                <img src="./assets/images/subHeroShapes.png" alt="some shapes" />
+                <img src="./assets/images/subHeroShapes.png" alt="some shapes" />
+                <img src="./assets/images/subHeroShapes.png" alt="some shapes" />
+                <img src="./assets/images/subHeroShapes.png" alt="some shapes" />
+                <img src="./assets/images/subHeroShapes.png" alt="some shapes" />
             </div>
             <div className="leftSideSubHero">
                 <p className="smallText">

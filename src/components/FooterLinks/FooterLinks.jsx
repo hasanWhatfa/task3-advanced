@@ -1,6 +1,8 @@
 import React from 'react'
 import './FooterLinks.css'
+import { useNavigate } from 'react-router-dom'
 const FooterLinks = ({title,links,linkTo}) => {
+    const navigate = useNavigate()
   return (
     <div className="FooterLinksContainer">
         <h4>{title}</h4>
@@ -8,7 +10,7 @@ const FooterLinks = ({title,links,linkTo}) => {
             {links?.map(
                 (link,linkIndex)=>{
                     return(
-                        <a href={`#${link.linkTo}`} key={linkIndex}>{link.linkName}</a>
+                        <a key={linkIndex} onClick={()=>navigate(`/${title}`)}>{link.linkName}</a>
                     )
                 }
             )}

@@ -18,8 +18,8 @@ const GalleryCard = ({imgArr,title,text}) => {
       <div className="galleryCardHeading">
         <h3 data-aos="fade-right" data-aos-duration="800">{title}</h3>
         <div className="btnsContainer">
-            <button onClick={()=>handlePrev(imgArr,setDIndex)}><img src="/assets/icons/arrowLeft.svg"/></button>
-            <button onClick={()=>handleNext(imgArr,setDIndex)}><img src="/assets/icons/arrowRight.svg"/></button>
+            <button onClick={()=>handlePrev(imgArr,setDIndex)}><img src="./assets/icons/arrowLeft.svg"/></button>
+            <button onClick={()=>handleNext(imgArr,setDIndex)}><img src="./assets/icons/arrowRight.svg"/></button>
         </div>
       </div>
       <p className="galleryCardText"

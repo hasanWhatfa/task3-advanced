@@ -1,14 +1,14 @@
 export const contactLinkData =[
     {
-        img:'/assets/icons/email.svg',
+        img:'./assets/icons/email.svg',
         contact:'hello@littlelearners.com'
     },
     {
-        img:'/assets/icons/phone.svg',
+        img:'./assets/icons/phone.svg',
         contact:'+91 91813 23 2309'
     },
     {
-        img:'/assets/icons/location.svg',
+        img:'./assets/icons/location.svg',
         contact:'Somewhere in the World'
     },
 ];
